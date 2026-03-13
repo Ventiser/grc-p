@@ -1,6 +1,8 @@
 # GRC-P
 Governance Runtime Control Protocol
 
+![GRC-P Version](https://img.shields.io/badge/GRC--P-v1.0--draft-blue)
+
 GRC-P defines a deterministic governance control plane for automated systems.
 
 The standard separates **governance authority** from **runtime execution**, ensuring that operational actions are evaluated against authoritative governance state before execution occurs.

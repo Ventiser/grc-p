@@ -24,7 +24,7 @@ The GRC-P architecture separates governance authority from execution systems.
 
 Registry Authority
 ↓
-RGIS Protocol
+RGIS
 ↓
 Gatekeeper Enforcement
 ↓
@@ -49,8 +49,8 @@ https://github.com/Ventiser/rgis
 
 In simple terms:
 
-- **GRC-P** explains the governance architecture.
-- **RGIS** defines the runtime protocol.
+- **GRC-P** defines the governance architecture.
+- **RGIS** defines the runtime interoperability protocol used by registry authorities and gatekeepers operating under GRC-P.
 
 ---
 
@@ -68,7 +68,11 @@ foundations/ Mathematical and theoretical foundations
 
 Draft publication of **GRC-P v1.0**.
 
+---
+
 ## Related Repositories
+
+The GRC-P architecture is implemented through a set of complementary repositories representing the architecture, protocol, and reference implementations.
 
 GRC-P — Governance architecture  
 https://github.com/Ventiser/grc-p
@@ -81,6 +85,16 @@ https://github.com/Ventiser/govenai-registry
 
 JobQue Gatekeeper — reference runtime enforcement implementation  
 https://github.com/Ventiser/jobque-gatekeeper
+
+---
+
+## Intellectual Property
+
+Certain concepts described in this repository may be covered by pending patent applications owned by Ventiser Pty Limited.
+
+See `PATENT-NOTICE.md` for additional details.
+
+---
 
 ## Stewardship
 

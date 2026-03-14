@@ -18,3 +18,13 @@ The protocol architecture introduces:
 • Deterministic Readiness Evaluation  
 • Fail-Closed Runtime Decisions  
 • Tamper-Evident Governance Evidence
+
+## Protocol Dependencies
+
+GRC-P defines the governance architecture.
+
+Runtime interoperability between registry authorities and gatekeepers
+is defined by the RGIS protocol.
+
+See:
+https://github.com/Ventiser/rgis

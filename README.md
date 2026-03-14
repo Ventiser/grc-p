@@ -17,19 +17,55 @@ GRC-P establishes the architectural model for:
 
 ---
 
+## Architecture Diagram
+
+```text
+            Request Originator
+(AI Agent / Application / Human Event / System Trigger)
+                     │
+                     ▼
+                   GRC-P
+    Governance Runtime Control Protocol
+            (Architecture Standard)
+                     │
+                     ▼
+                   RGIS
+   Registry–Gatekeeper Interface Protocol
+                     │
+        ┌────────────┴────────────┐
+        │                         │
+        ▼                         ▼
+  GovenAI Registry         JobQue Gatekeeper
+Authority Implementation   Enforcement Implementation
+        │                         │
+        └────────────┬────────────┘
+                     ▼
+       Governance Enforcement Boundary
+                     │
+                     ▼
+           Operational Execution
+             (APIs / Systems)
+```
+
+The architecture is **domain-agnostic** and establishes a **governance enforcement boundary** in front of operational APIs and systems.
+
+Any execution surface placed behind this boundary becomes a **governed execution environment**.
+
+---
+
 ## Architecture Overview
 
-The GRC-P architecture separates governance authority from execution systems.
+The GRC-P architecture separates **governance authority** from **execution systems**.
 
-
+```text
 Registry Authority
-↓
-RGIS
-↓
+        ↓
+      RGIS
+        ↓
 Gatekeeper Enforcement
-↓
+        ↓
 Execution Systems
-
+```
 
 - **Registry Authority** maintains governance state.
 - **Gatekeepers** enforce permit/deny decisions before execution.
@@ -56,11 +92,11 @@ In simple terms:
 
 ## Repository Structure
 
-
-specs/ Formal GRC-P specification
+```text
+specs/        Formal GRC-P specification
 architecture/ Reference architecture documents
-foundations/ Mathematical and theoretical foundations
-
+foundations/  Mathematical and theoretical foundations
+```
 
 ---
 
